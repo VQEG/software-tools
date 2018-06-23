@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: https://vqeg.github.io/software-tools/sitemap.xml

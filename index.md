@@ -5,7 +5,7 @@ header:
   overlay_filter: "0.5"
   overlay_image: /assets/images/test-screen.jpg
   cta_label: "Browse Tools"
-  cta_url: "/categories"
+  cta_url: "/tools"
 excerpt: "Providing the video quality research community with a wide variety of **software tools and guidance** in order to facilitate research."
 ---
 
@@ -17,6 +17,6 @@ Tools are available in the following categories:
 
 - [Models](/tools/#models) — software to run (video) quality analyses
 - [Stream Analyzers](/tools/#stream-analyzers) — extracting information from video streams
-- [Encoders](tools/#encoders) — video encoding tools
-- [Simulators](tools/#simulators) — streaming and network simulators
-- [Subjective Test Software](tools/#subjective-test-software) — tools for running and analyzing subjective tests
+- [Encoders](/tools/#encoders) — video encoding tools
+- [Simulators](/tools/#simulators) — streaming and network simulators
+- [Subjective Test Software](/tools/#subjective-test-software) — tools for running and analyzing subjective tests
