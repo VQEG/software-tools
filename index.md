@@ -15,8 +15,7 @@ These tools have been contributed by different VQEG members and are free to use 
 
 Tools are available in the following categories:
 
-- [Models](tools/#models) — software to run (video) quality analyses
-- [Stream Analyzers](tools/#stream-analyzers) — extracting information from video streams
-- [Encoders](tools/#encoders) — video encoding tools
-- [Simulators](tools/#simulators) — streaming and network simulators
+- [Quality Analysis](tools/#quality-analysis) — software to run (video) quality analyses
+- [Encoding](tools/#encoding) — video encoding tools
+- [Streaming](tools/#streaming) — streaming and extracting information from video streams
 - [Subjective Test Software](tools/#subjective-test-software) — tools for running and analyzing subjective tests
