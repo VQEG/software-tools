@@ -1,0 +1,12 @@
+# main links
+main:
+  - title: "Home"
+    url: /
+  - title: "Tools"
+    url: /tools
+  - title: "Tags"
+    url: /tags
+  - title: "About"
+    url: /about
+  - title: "Contact"
+    url: /contact
