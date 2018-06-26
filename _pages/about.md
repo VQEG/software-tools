@@ -16,6 +16,6 @@ The main goal of the VQEG Tools and Subjective Labs Setup support group is to pr
 
 ## Questions?
 
-Any questions or remarks concerning the Tools and Subjective Labs Setup support group can be directed to one of the co-chairs or maintainers — see [Contact](contact).
+Any questions or remarks concerning the Tools and Subjective Labs Setup support group can be directed to one of the co-chairs or maintainers — see [Contact](/contact).
 
 Feel free to contact the co-chairs in case you would like to add or recommend other software tools to be added to the Tools and Subjective Labs Setup website.
