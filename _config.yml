@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "en-US"
-title                    : "VQEG STL"
+title                    : "VQEG Tools and Subjective Labs Setup"
 title_separator          : "-"
 name                     : ""
 description              : "Software tools and guidance for the research community."

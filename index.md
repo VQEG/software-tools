@@ -11,7 +11,9 @@ excerpt: "Providing the video quality research community with a wide variety of 
 
 The [**Video Quality Experts Group (VQEG)**](https://www.its.bldrdoc.gov/vqeg/vqeg-home.aspx) is a group of experts from various backgrounds and affiliations, including participants from several internationally recognized organizations, working in the field of video quality assessment. For more info, please visit our [About](about) page.
 
-These tools have been contributed by different VQEG members and are free to use for research purposes. **Do you want to contribute?** Please visit [Contact](contact) for more info.
+This website the output of the **Tools and Subjective Labs Setup** group.
+
+The tools here have been contributed by different VQEG members and are free to use for research purposes. **Do you want to contribute?** Please visit [Contact](contact) for more info.
 
 Tools are available in the following categories:
 
