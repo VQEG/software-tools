@@ -7,6 +7,52 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+/* type scale */
+html {
+  font-size: 18px; // change to whatever
+
+  @include breakpoint($medium) {
+    font-size: 20px; // change to whatever
+  }
+
+  @include breakpoint($large) {
+    font-size: 20px; // change to whatever
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 20px; // change to whatever
+  }
+}
+
+/* dark syntax highlighting (base16) */
+$base00: #ffffff;
+$base01: #e0e0e0;
+$base02: #d0d0d0;
+$base03: #b0b0b0;
+$base04: #000000;
+$base05: #101010;
+$base06: #151515;
+$base07: #202020;
+$base08: #ff0086;
+$base09: #fd8900;
+$base0a: #aba800;
+$base0b: #00c918;
+$base0c: #1faaaa;
+$base0d: #3777e6;
+$base0e: #ad00a1;
+$base0f: #cc6633;
+
+/* custom elements */
+
+.masthead__menu-item {
+  font-size: $type-size-6;
+}
+
+.archive__item-title {
+    font-size: $type-size-5;
+    font-weight: normal;
+}
+
 section.page__content__tool {
     margin-top: 27px;
 }

@@ -6,6 +6,8 @@ main:
     url: /tools
   - title: "Tags"
     url: /tags
+  - title: "Guides"
+    url: /guides
   - title: "About"
     url: /about
   - title: "Contact"
