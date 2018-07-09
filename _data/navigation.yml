@@ -6,6 +6,8 @@ main:
     url: /tools
   - title: "Tags"
     url: /tags
+  - title: "Video Databases"
+    url: /video-databases
   - title: "Guides"
     url: /guides
   - title: "About"

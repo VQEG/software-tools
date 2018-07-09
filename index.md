@@ -13,11 +13,13 @@ The [**Video Quality Experts Group (VQEG)**](https://www.its.bldrdoc.gov/vqeg/vq
 
 This website the output of the **Tools and Subjective Labs Setup** group.
 
-The tools here have been contributed by different VQEG members and are free to use for research purposes. **Do you want to contribute?** Please visit [Contact](contact) for more info.
-
 Tools are available in the following categories:
 
 - [Quality Analysis](tools/#quality-analysis) — software to run (video) quality analyses
 - [Encoding](tools/#encoding) — video encoding tools
 - [Streaming](tools/#streaming) — streaming and extracting information from video streams
 - [Subjective Test Software](tools/#subjective-test-software) — tools for running and analyzing subjective tests
+
+The tools here have been contributed by different VQEG members and are free to use for research purposes. Furthermore, we provide [guidance on how to perform subjective](guides) tests, and offer links to [freely available video content](video-databases).
+
+ **Do you want to contribute?** Please visit [Contact](contact) for more info.
