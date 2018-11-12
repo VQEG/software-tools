@@ -9,3 +9,5 @@ external_link: https://gitlab.com/MMTesting/MMTesting
 ---
 
 MMTesting is a software to conduct subjective video or audio tests. It can be configured with a set of media files. MMTesting plays back each media file and after that presents a rating dialog to the subject. It supports VLC, mplayer and OptiPlay as media players and has initially been developed by ITS and modified by OPTICOM.
+
+For getting access, please contact [Thomas Wittmann](mailto:tw@opticom.de).
