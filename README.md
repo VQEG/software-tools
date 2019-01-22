@@ -16,6 +16,16 @@ bundle exec jekyll serve --config _config.yml,_config.dev.yml
 
 You may also use `liveserve` instead of `serve` to trigger rebuilds.
 
+## Updating Dependencies
+
+If there are any updates needed, you can update the Gems with:
+
+```
+bundle update
+```
+
+This will install, among others, security updates. After updating,  Then, commit and push the `Gemfile` and `Gemfile.lock`.
+
 ## License
 
 Copyright 2018 Werner Robitza
