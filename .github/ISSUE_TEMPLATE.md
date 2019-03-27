@@ -14,6 +14,7 @@ If you want to add a new tool, please add the following information:
     - Encoders
     - Simulators
     - Subjective Test Software
+    - Helper Tools
 - **External Link:** the link to the website where the tool is hosted
 - **Direct Download Link:** a link to directly download the tool (if available)
 
