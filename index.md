@@ -19,6 +19,7 @@ Tools are available in the following categories:
 - [Encoding](tools/#encoding) — video encoding tools
 - [Streaming](tools/#streaming) — streaming and extracting information from video streams
 - [Subjective Test Software](tools/#subjective-test-software) — tools for running and analyzing subjective tests
+- [Helper Tools](tools/#helper-tools) — miscellaneous helper tools
 
 The tools here have been contributed by different VQEG members and are free to use for research purposes. Furthermore, we provide [guidance on how to perform subjective](guides) tests, and offer links to [freely available video content](video-databases).
 
