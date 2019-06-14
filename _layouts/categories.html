@@ -31,7 +31,16 @@ layout: archive
       <section id="{{ category[0] | slugify | downcase }}" class="taxonomy__section">
         <h2 class="archive__subtitle">{{ category[0] }}</h2>
         <div class="entries-{{ page.entries_layout | default: 'list' }}">
-          {% for post in category.last reversed %}
+          {% assign post_names = "" | split:"" %}
+          {% for post in category.last %}
+            {% assign post_names = post_names | push: post.title %}
+          {% endfor %}
+
+          {% assign sorted_post_names = post_names | sort_natural %}
+
+          {% for post_name in sorted_post_names %}
+            {% assign matched_post = site.posts | where:"title",post_name %}
+            {% assign post = matched_post[0] %}
             {% include archive-single.html type=page.entries_layout %}
           {% endfor %}
         </div>
