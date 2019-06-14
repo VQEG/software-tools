@@ -4,7 +4,7 @@ excerpt: Audio normalization script for Python/ffmpeg
 author: Werner Robitza
 license: MIT
 tags: python windows macos linux audio open-source
-category: "Subjective Test Software"
+category: "Helper Tools"
 external_link: https://github.com/slhck/ffmpeg-normalize
 ---
 
