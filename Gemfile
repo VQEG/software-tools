@@ -4,3 +4,4 @@ group :jekyll_plugins do
   gem 'hawkins'
   gem 'jekyll-include-cache'
 end
+gem 'kramdown-parser-gfm'
