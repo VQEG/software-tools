@@ -5,3 +5,5 @@ group :jekyll_plugins do
   gem 'jekyll-include-cache'
 end
 gem 'kramdown-parser-gfm'
+
+gem "webrick", "~> 1.7"
