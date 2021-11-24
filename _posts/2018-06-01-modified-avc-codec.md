@@ -5,7 +5,7 @@ author: unknown
 license: unknown
 tags: c++ h264
 category: Encoding
-direct_download_link: ftp://intecftp.intec.ugent.be/vqeg/jeg/tools/jm_16.1_xmltrace_v1.5.zip
+direct_download_link: https://cloud.ilabt.imec.be/index.php/s/BEEYE5xAs5s3N23
 ---
 
 Version 16.1 of the JM Reference software has been adjusted in order to enable the generation of an XML-based trace file. This file contains detailed information concerning the encoded H.264 bit stream. The trace file is generated during the decoding process. Changes have been made to the following source files for enabling the trace file generation:
