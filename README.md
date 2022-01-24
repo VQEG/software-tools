@@ -14,7 +14,11 @@ bundle install
 bundle exec jekyll serve --config _config.yml,_config.dev.yml
 ```
 
-You may also use `liveserve` instead of `serve` to trigger rebuilds.
+You may also use this to trigger automatic rebuilds:
+
+```
+bundle exec jekyll serve --livereload
+```
 
 ## Updating Dependencies
 
