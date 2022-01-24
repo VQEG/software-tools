@@ -6,7 +6,7 @@ Go to [https://vqeg.github.io/software-tools/](https://vqeg.github.io/software-t
 
 ## Development
 
-Install Ruby (2.4 or higher), then in this directory:
+Install Ruby (2.7, 3.x is not supported), then in this directory:
 
 ```
 gem install bundler
