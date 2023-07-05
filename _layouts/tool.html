@@ -42,7 +42,15 @@ layout: default
 
       <footer class="page__meta">
         {% if page.author %}
-          <p class="page__meta__misc"><strong><i class="fas fa-fw fa-user" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].author_label | default: "Author:" }}</strong> {{ page.author }}
+          <p class="page__meta__misc"><strong><i class="fas fa-fw fa-user" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].author_label | default: "Author(s):" }}</strong>
+            {% if page.author | type == "array" %}
+              {% for author in page.author %}
+                {{ author }}
+                {% if forloop.last == false %}• {% endif %}
+              {% endfor %}
+            {% else %}
+              {{ page.author }}
+            {% endif %}
           </p>
         {% endif %}
         {% if page.license %}
