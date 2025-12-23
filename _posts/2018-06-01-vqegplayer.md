@@ -5,7 +5,6 @@ author: Kjell Brunnström (Acreo Swedish ICT AB), Romain Cousseau (IRCCyN / Univ
 license: GPL v3
 tags: windows open-source c++
 category: "Subjective Test Software"
-external_link: https://vqeg.github.io/
 deprecated: true
 ---
 

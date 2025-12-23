@@ -84,6 +84,9 @@ def validate_frontmatter(data: dict, filepath: Path) -> list[str]:
     # Check required fields
     is_deprecated = data.get("deprecated", False)
     for field in REQUIRED_FIELDS:
+        # external_link is optional for deprecated tools
+        if field == "external_link" and is_deprecated:
+            continue
         if field not in data:
             errors.append(f"  - Missing required field: {field}")
         elif data[field] is None or (isinstance(data[field], str) and not data[field].strip()):

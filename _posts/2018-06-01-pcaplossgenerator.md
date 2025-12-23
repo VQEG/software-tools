@@ -5,7 +5,6 @@ author: AGH University
 license: unknown
 tags: linux windows macos c++ open-source
 category: "Streaming"
-external_link: https://vqeg.github.io/
 deprecated: true
 ---
 

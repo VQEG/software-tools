@@ -5,7 +5,6 @@ author: Deutsche Telekom AG, TU Berlin
 license: For non-commercial research purposes
 tags: python linux macos windows non-commercial
 category: "Quality Analysis"
-external_link: https://vqeg.github.io/
 deprecated: true
 ---
 

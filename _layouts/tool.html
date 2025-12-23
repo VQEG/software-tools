@@ -40,6 +40,13 @@ layout: default
         </header>
       {% endunless %}
 
+      {% if page.deprecated %}
+      <div class="notice--warning deprecated-notice">
+        <h4><i class="fas fa-exclamation-triangle" aria-hidden="true"></i> Deprecated Tool</h4>
+        <p>This tool is no longer actively maintained or the original download is no longer available. The information below is kept for historical reference. If you know of an updated URL or alternative, please <a href="https://github.com/VQEG/software-tools/edit/master/{{ page.path }}">suggest an edit</a> or <a href="https://github.com/VQEG/software-tools/issues/new">open an issue</a>.</p>
+      </div>
+      {% endif %}
+
       <footer class="page__meta">
         {% if page.author %}
           <p class="page__meta__misc"><strong><i class="fas fa-fw fa-user" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].author_label | default: "Author(s):" }}</strong>

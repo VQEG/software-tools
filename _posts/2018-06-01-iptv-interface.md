@@ -5,7 +5,6 @@ author: Acreo (now RISE Research Institutes of Sweden)
 license: GNU GPL v2
 tags: c++ open-source
 category: "Quality Analysis"
-external_link: https://www.ri.se/
 deprecated: true
 ---
 
