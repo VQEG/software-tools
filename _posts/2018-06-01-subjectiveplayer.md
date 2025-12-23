@@ -14,7 +14,16 @@ Because the context of usage in mobile multimedia is totally different from the 
 
 SubjectivePlayer for Android can:
 
-* play an indefinitely long list of MPEG-4 AVC (H.264) coded videos, either in .mp4 or .3gpp format
-* after each video ask the user for their opinion using a certain methodology
-* record a user ID so as to identify the test person later
-* log the user opinion to text files
+* play videos encoded with H.264, H.265/HEVC, VP9, VP8, and AV1 codecs in MP4, WebM, MKV, and 3GP containers
+* provide edge-to-edge playback, utilizing the full screen or avoiding display cutouts
+* ask the user for their opinion using various methodologies:
+  * 5-point ACR scale (Excellent/Good/Fair/Poor/Bad) following ITU-T standards
+  * continuous slider-based ratings (0–100)
+  * experimental DSIS impairment scale and real-time volume button ratings
+* record a participant ID to identify the test person later
+* support playlist-based video sequencing for different users
+* include training sessions and break management
+* log results to CSV files with timestamps
+* support multiple languages (English and German)
+
+Requirements: Android 7.0 (API level 24) or higher.
