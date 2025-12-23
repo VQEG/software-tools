@@ -29,7 +29,7 @@ VALID_CATEGORIES = {
 }
 
 # Fields that should be boolean
-BOOLEAN_FIELDS = ["deprecated"]
+BOOLEAN_FIELDS = ["broken_link"]
 
 # Fields that should be strings (not lists/dicts unless specified)
 STRING_FIELDS = [
@@ -82,20 +82,20 @@ def validate_frontmatter(data: dict, filepath: Path) -> list[str]:
     errors = []
 
     # Check required fields
-    is_deprecated = data.get("deprecated", False)
+    has_broken_link = data.get("broken_link", False)
     for field in REQUIRED_FIELDS:
-        # external_link is optional for deprecated tools
-        if field == "external_link" and is_deprecated:
+        # external_link is optional for tools with broken links
+        if field == "external_link" and has_broken_link:
             continue
         if field not in data:
             errors.append(f"  - Missing required field: {field}")
         elif data[field] is None or (isinstance(data[field], str) and not data[field].strip()):
             # Allow empty strings for some fields
             # - excerpt is always optional
-            # - external_link can be empty for deprecated tools
+            # - external_link can be empty for tools with broken links
             if field == "excerpt":
                 continue
-            if field == "external_link" and is_deprecated:
+            if field == "external_link" and has_broken_link:
                 continue
             errors.append(f"  - Required field '{field}' is empty")
 

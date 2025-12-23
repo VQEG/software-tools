@@ -4,6 +4,36 @@ layout: archive
 
 {{ content }}
 
+<div class="broken-link-filter">
+  <label>
+    <input type="checkbox" id="hide-broken-links" onchange="toggleBrokenLinks(this.checked)">
+    Hide tools with broken links
+  </label>
+</div>
+
+<script>
+function toggleBrokenLinks(hide) {
+  var container = document.querySelector('.taxonomy__index').parentElement;
+  if (hide) {
+    container.classList.add('hide-broken-links');
+  } else {
+    container.classList.remove('hide-broken-links');
+  }
+  // Persist preference
+  localStorage.setItem('hideBrokenLinks', hide);
+}
+
+// Restore preference on page load
+document.addEventListener('DOMContentLoaded', function() {
+  var hide = localStorage.getItem('hideBrokenLinks') === 'true';
+  var checkbox = document.getElementById('hide-broken-links');
+  if (checkbox && hide) {
+    checkbox.checked = true;
+    toggleBrokenLinks(true);
+  }
+});
+</script>
+
 {% assign categories_max = 0 %}
 {% for category in site.categories %}
   {% if category[1].size > categories_max %}

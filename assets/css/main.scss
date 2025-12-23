@@ -97,3 +97,52 @@ p.page__excerpt {
     color: #fff !important;
   }
 }
+
+/* Broken link badge for tool listings */
+.broken-link-badge {
+  display: inline-block;
+  background-color: #e67e22;
+  color: #fff;
+  font-size: 0.7em;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  i {
+    margin-right: 4px;
+  }
+}
+
+/* Broken link filter toggle */
+.broken-link-filter {
+  margin-bottom: 1.5em;
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  label {
+    cursor: pointer;
+    font-size: 0.9em;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  input[type="checkbox"] {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Hide broken link items when filter is active */
+.hide-broken-links [data-broken-link="true"] {
+  display: none !important;
+}

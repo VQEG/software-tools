@@ -5,7 +5,7 @@ author: AGH University
 license: unknown
 tags: linux windows macos c++ open-source
 category: "Streaming"
-deprecated: true
+broken_link: true
 ---
 
 Installation process:

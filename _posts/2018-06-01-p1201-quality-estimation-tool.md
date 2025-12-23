@@ -5,7 +5,7 @@ author: Deutsche Telekom AG, TU Berlin
 license: For non-commercial research purposes
 tags: python linux macos windows non-commercial
 category: "Quality Analysis"
-deprecated: true
+broken_link: true
 ---
 
 This tool is an implementation of the audiovisual coding quality module of the ITU-T P.1201.2 standard. It estimates the audiovisual, video, audio coding quality for IP-based video streaming applications. It works on audiovisual bitstream (PCAP) in combination with the modified JM H.264/AVC codec. It also works with encrypted data, but the I/P/B frame sizes have in that case to be estimated, and the performance of the model depends on the accurate estimation of the I/P/B frame sizes. Finally, video files encoded with x264 or the H.264/AVC JM Reference Software are also supported.

@@ -5,7 +5,7 @@ author: Kjell Brunnström (Acreo Swedish ICT AB), Romain Cousseau (IRCCyN / Univ
 license: GPL v3
 tags: windows open-source c++
 category: "Subjective Test Software"
-deprecated: true
+broken_link: true
 ---
 
 VQEGPlayer is a software for performing subjective video quality experiments for Windows 7 in 64bit. More recent versions may work with adaptations.
