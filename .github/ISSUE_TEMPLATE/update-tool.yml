@@ -1,0 +1,65 @@
+name: Update Tool Entry
+description: Report incorrect information or request updates to an existing tool entry.
+title: "[Update]: "
+labels: ["update"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to report issues with existing tool entries or request updates.
+
+  - type: input
+    id: tool_name
+    attributes:
+      label: Tool Name
+      description: Which tool entry needs to be updated?
+      placeholder: e.g., SITI
+    validations:
+      required: true
+
+  - type: input
+    id: tool_url
+    attributes:
+      label: Tool Page URL
+      description: Link to the tool entry on the VQEG Software Tools website
+      placeholder: https://vqeg.github.io/software-tools/...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Type of Update
+      description: What kind of update is needed?
+      options:
+        - Broken/outdated link
+        - Incorrect information
+        - Tool no longer available
+        - Additional information to add
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_info
+    attributes:
+      label: Current Information
+      description: What is the current (incorrect) information?
+    validations:
+      required: false
+
+  - type: textarea
+    id: correct_info
+    attributes:
+      label: Correct/Updated Information
+      description: What should the information be updated to?
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Any other context or information that might be helpful.
+    validations:
+      required: false

@@ -1,4 +1,4 @@
-# VQEG STL Website
+# VQEG Software Tools Website
 
 Author: Werner Robitza
 
@@ -6,39 +6,48 @@ Go to [https://vqeg.github.io/software-tools/](https://vqeg.github.io/software-t
 
 ## Development
 
-Install Ruby (2.7, 3.x is not supported), then in this directory:
+Install Ruby 3.2 or higher, then in this directory:
 
-```
+```bash
 gem install bundler
 bundle install
-bundle exec jekyll serve --config _config.yml,_config.dev.yml
+RUBYOPT="-r$PWD/disable_ssl_verify.rb" bundle exec jekyll serve -l --config _config.yml,_config.dev.yml
 ```
 
-You may also use this to trigger automatic rebuilds:
+The `-l` flag enables live reloading.
 
-```
-bundle exec jekyll serve --livereload
-```
+Note: The `disable_ssl_verify.rb` script is needed for local development with remote themes to bypass SSL verification issues.
 
 ## Updating Dependencies
 
 If there are any updates needed, you can update the Gems with:
 
-```
+```bash
 bundle update
 ```
 
-This will install, among others, security updates. After updating,  Then, commit and push the `Gemfile` and `Gemfile.lock`.
+This will install, among others, security updates. After updating, commit and push the `Gemfile` and `Gemfile.lock`.
 
 ## Checking Links
 
 Install [GNU Parallel](https://www.gnu.org/software/parallel/) and run:
 
-```
+```bash
 grep -hriE '(external_link:|direct_download_link:)' _posts/*.md | cut -d ":" -f2- | parallel --trim l --timeout 5 "curl -L -o /dev/null --silent --head --write-out '%{url_effective} %{http_code}\n' {}" 2>/dev/null | grep -v 200
 ```
 
 This will print all non-200 links, which includes broken links or other errors. FTP is currently not supported.
+
+## Validating Frontmatter
+
+To validate all post frontmatter locally:
+
+```bash
+pip install pyyaml
+python .github/scripts/validate_frontmatter.py
+```
+
+This is also run automatically on pull requests and pushes to master.
 
 ## License
 

@@ -1,0 +1,96 @@
+name: New Tool Submission
+description: Submit a new tool to the VQEG Software Tools collection.
+title: "[Tool]: "
+labels: ["new-tool"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for submitting a tool to the VQEG Software Tools collection!
+        Please fill out the form below with as much detail as possible.
+
+  - type: input
+    id: title
+    attributes:
+      label: Tool Name
+      description: The name of the tool
+      placeholder: e.g., SITI - Spatial and Temporal Information
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: What category does this tool belong to?
+      options:
+        - Quality Analysis
+        - Subjective Test Software
+        - Helper Tools
+        - Streaming
+        - Encoding
+        - Content Preparation
+    validations:
+      required: true
+
+  - type: input
+    id: author
+    attributes:
+      label: Author / Institution
+      description: The institution or author(s) who created the tool
+      placeholder: e.g., TU Berlin, Pierre Lebreton
+    validations:
+      required: true
+
+  - type: input
+    id: external_link
+    attributes:
+      label: External Link
+      description: URL to the tool website or repository
+      placeholder: https://github.com/example/tool
+    validations:
+      required: true
+
+  - type: input
+    id: direct_download_link
+    attributes:
+      label: Direct Download Link
+      description: URL to directly download the tool (if available)
+      placeholder: https://github.com/example/tool/archive/master.zip
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A detailed description of the tool, its features, and intended use cases.
+      placeholder: Describe what the tool does, how it works, and what it can be used for...
+    validations:
+      required: true
+
+  - type: input
+    id: license
+    attributes:
+      label: License
+      description: The license under which the tool is distributed
+      placeholder: e.g., MIT, GPL v3, Apache 2.0
+    validations:
+      required: false
+
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: Space-separated tags to help categorize this tool
+      placeholder: e.g., windows linux python open-source
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I confirm that this tool information is accurate and I have permission to submit it.
+          required: true

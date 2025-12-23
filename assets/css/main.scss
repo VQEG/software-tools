@@ -85,3 +85,15 @@ p.page__excerpt {
 .page__title {
   margin-top: 30px;
 }
+
+/* Fix button link colors - white text on colored backgrounds */
+.btn--primary,
+.btn--success {
+  color: #fff !important;
+
+  &:visited,
+  &:hover,
+  &:active {
+    color: #fff !important;
+  }
+}
