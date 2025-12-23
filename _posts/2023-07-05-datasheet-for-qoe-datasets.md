@@ -1,10 +1,7 @@
 ---
 title: Datasheet for Subjective and Objective Quality Assessment Datasets
 excerpt: A datasheet template to document the various aspects of QoE datasets.
-author:
-         - Dr Nabajeet Barman, Kingston University, London, United Kingdom (n.barman@ieee.org, nabajeetbarman4@gmail.com)
-         - Dr Yuriy Reznik, Brightcove Inc, Seattle, USA  (yreznik@brightcove.com)
-         - Prof Maria Martini, Kingston University, London, United Kingdom (m.martini@kingston.ac.uk)
+author: "Dr Nabajeet Barman, Dr Yuriy Reznik, Prof Maria Martini"
 license:  MIT license
 tags: open-source datasheet
 category: "Helper Tools"

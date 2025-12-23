@@ -5,8 +5,8 @@ author: Austin Mivshek, Margaret Pinson, Institute for Telecommunication Science
 license: For any purpose
 tags: matlab
 category: "Subjective Test Software"
-external_link: https://www.its.bldrdoc.gov/resources/video-quality-research/guides-and-tutorials/subject-screening-overview.aspx
-direct_download_link: https://www.its.bldrdoc.gov/resources/video-quality-research/guides-and-tutorials/subject-screening-code.aspx
+external_link: https://its.ntia.gov/research/video-quality-research/software/subject-screening-code/
+direct_download_link: https://its.ntia.gov/media/37908/screening.zip
 ---
 
 Following is a list of popular subject screening techniques. MATLAB code for the automated techniques is made available. This code may be used for any purpose, commercial or non-commercial.

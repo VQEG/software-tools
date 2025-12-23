@@ -1,12 +1,12 @@
 ---
 title:  VQEGPlayer
 excerpt: Performing subjective video quality experiments for Windows
-author: Kjell Brunnström (Acreo Swedish ICT AB), Romain Cousseau (IRCCyN / University of Nantes), Jimmy Jonsson (Acreo Swedish ICT AB), Yao Koudota (IRCCyN / University of Nantes), Vladimir Bagazov ((IRCCyN / University of Nantes), Marcus Barkowsky (IRCCyN / University of Nantes)
+author: Kjell Brunnström (Acreo Swedish ICT AB), Romain Cousseau (IRCCyN / University of Nantes), Jimmy Jonsson (Acreo Swedish ICT AB), Yao Koudota (IRCCyN / University of Nantes), Vladimir Bagazov (IRCCyN / University of Nantes), Marcus Barkowsky (IRCCyN / University of Nantes)
 license: GPL v3
 tags: windows open-source c++
 category: "Subjective Test Software"
-external_link: http://vqegjeg.intec.ugent.be/wiki/index.php/VQEGplayer-main
-direct_download_link: ftp://ftp.ivc.polytech.univ-nantes.fr/VQEG/JEG/VQEGPLAYER/src/VQEGPlayer_6.zip
+external_link: https://vqeg.github.io/
+deprecated: true
 ---
 
 VQEGPlayer is a software for performing subjective video quality experiments for Windows 7 in 64bit. More recent versions may work with adaptations.

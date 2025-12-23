@@ -4,7 +4,7 @@ excerpt: Reliably transmit video data from one location to another
 author: Marcus Barkowsky
 license: GNU General Public License version 3.0 (GPLv3)
 tags: ffmpeg h264 windows
-categories: Encoding Streaming
+category: "Streaming"
 external_link: https://sourceforge.net/p/definitelylossl/wiki/Home/
 ---
 

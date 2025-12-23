@@ -4,8 +4,9 @@ excerpt: Generate packet loss in PCAP files
 author: AGH University
 license: unknown
 tags: linux windows macos c++ open-source
-categories: Streaming
-direct_download_link: ftp://intecftp.intec.ugent.be/vqeg/jeg/tools/PcapLossGenerator.zip
+category: "Streaming"
+external_link: https://vqeg.github.io/
+deprecated: true
 ---
 
 Installation process:

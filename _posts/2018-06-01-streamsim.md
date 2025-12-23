@@ -4,7 +4,7 @@ excerpt: Encode and stream raw video material, with optional packet loss
 author: "TU Berlin, Deutsche Telekom AG"
 license: GNU GPLv3
 tags: linux windows macos python open-source h264 h265
-categories: Encoding Streaming
+category: "Streaming"
 external_link: https://gitlab.com/vqeg/streamsim
 direct_download_link: https://gitlab.com/vqeg/streamsim/-/archive/master/streamsim-master.zip
 ---
