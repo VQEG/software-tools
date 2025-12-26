@@ -1,43 +1,35 @@
 ---
 title:  ffmpeg-debug-qp
-excerpt: FFmpeg Debug Script for QP Values
-author: Werner Robitza, Steve Göring, Pierre Lebreton
+excerpt: Extract QP values from video files on a per-frame, per-macroblock basis
+author: Werner Robitza, Steve Göring, Pierre Lebreton, Nathan Trevivian, Valerio Triolo
 license: MIT
-tags: python windows macos linux video open-source
+tags: python macos linux video open-source
 category: "Quality Analysis"
 external_link: https://github.com/slhck/ffmpeg-debug-qp
+direct_download_link: https://github.com/slhck/ffmpeg-debug-qp/releases
 ---
 
-Prints QP values of input sequence on a per-frame basis.
+Extracts quantization parameter (QP) values from video files on a per-frame, per-macroblock basis.
 
-Supported input:
+Supported codecs:
 
 - MPEG-2
 - MPEG-4 Part 2
-- H.264 / MPEG-4 Part 10 (AVC)
+- H.264 / AVC
 
-Supported formats:
+Features:
 
-- MPEG-4 Part 14
-- H.264 Annex B bytestreams
+- Multiple output formats (JSON, line-delimited JSON, CSV)
+- Optional macroblock-level metadata extraction
+- Static binary builds with embedded FFmpeg available
 
-To run the tool:
+Requirements:
 
-    ./ffmpeg_debug_qp test.mp4
+- Python 3.9+
+- FFmpeg 8.x or higher libraries
 
-The output will be as follows:
+Installation:
 
-    ...
-    [h264 @ 0x7fcf61813e00] nal_unit_type: X, nal_ref_idc: X
-    [h264 @ 0x7fcf61813e00] New frame, type: X
-    [h264 @ 0x7fcf61813e00] AABBCCDD...
+    pip3 install ffmpeg-debug-qp
 
-Where in the above, AA is the QP value of the first macroblock, BB of the second, etc.
-For every macroblock row, there will be another row printed per frame.
-
-You can parse the values with the `parse-qp-output.py` script, e.g.
-
-    $ ./ffmpeg-debug-qp test.mp4 2> qp-values.txt
-    $ ./parse-qp-output.py qp-values.txt qp-values.ldjson
-
-This produces a newline-delimited JSON file that is easier to parse. Each line contains one frame.
+Pre-built static binaries for Linux and macOS (x86_64, ARM64) are available on the releases page.
