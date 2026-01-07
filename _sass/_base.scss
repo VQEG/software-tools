@@ -1,0 +1,136 @@
+// Base reset and typography
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $font-size-base;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  font-family: $font-family-base;
+  font-weight: $font-weight-normal;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+// Headings with VQEG styling
+h1, h2, h3, h4, h5, h6 {
+  color: $vqeg-blue;
+  font-weight: $font-weight-bold;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+}
+
+h1 { font-size: $font-size-h1; }
+h2 { font-size: $font-size-h2; }
+h3 { font-size: $font-size-h3; }
+
+// Section titles with red underline
+.section-title,
+article h2 {
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid $vqeg-red;
+  display: inline-block;
+}
+
+// Links with VQEG styling
+a {
+  color: $vqeg-blue;
+  text-decoration: none;
+  transition: color $transition-base;
+
+  &:hover, &:focus {
+    color: $vqeg-red;
+  }
+}
+
+// Paragraphs
+p {
+  margin: 0 0 1em 0;
+}
+
+// Lists
+ul, ol {
+  margin: 0 0 1em 0;
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.25em;
+}
+
+// Code
+code {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.9em;
+  background-color: $light-gray;
+  padding: 0.2em 0.4em;
+  border-radius: $border-radius;
+}
+
+pre {
+  background-color: $light-gray;
+  padding: $spacing-unit;
+  border-radius: $border-radius;
+  overflow-x: auto;
+  margin: 0 0 1em 0;
+
+  code {
+    background: none;
+    padding: 0;
+  }
+}
+
+// Images
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Tables
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+th, td {
+  padding: 0.75em;
+  text-align: left;
+  border-bottom: 1px solid $border-color;
+}
+
+th {
+  font-weight: $font-weight-semibold;
+  color: $vqeg-blue;
+}
+
+// Blockquotes
+blockquote {
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  border-left: 4px solid $vqeg-red;
+  color: $text-muted;
+  font-style: italic;
+}
+
+// Horizontal rule
+hr {
+  border: none;
+  border-top: 1px solid $border-color;
+  margin: 2em 0;
+}

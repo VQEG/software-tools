@@ -2,8 +2,6 @@ source "https://rubygems.org"
 ruby "3.3.8"
 
 gem "github-pages", group: :jekyll_plugins
-gem "jekyll-remote-theme"
-gem "minimal-mistakes-jekyll"
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"

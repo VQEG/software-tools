@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title | escape }} - {% endif %}{{ site.title | escape }}</title>
+<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+
+<!-- CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="https://vqeg.org/assets/VQEG-logo.svg">
+
+<!-- Feed -->
+{% if site.atom_feed.path %}
+  <link type="application/atom+xml" rel="alternate" href="{{ site.atom_feed.path | absolute_url }}" title="{{ site.title | escape }}">
+{% else %}
+  <link type="application/atom+xml" rel="alternate" href="{{ '/feed.xml' | absolute_url }}" title="{{ site.title | escape }}">
+{% endif %}
+
+<!-- Open Graph -->
+<meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+<meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:site_name" content="{{ site.title | escape }}">
+<meta property="og:type" content="website">

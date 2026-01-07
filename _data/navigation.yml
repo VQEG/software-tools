@@ -8,8 +8,6 @@ main:
     url: /tags
   - title: "Video Databases"
     url: /video-databases
-  - title: "Guides"
-    url: /guides
   - title: "About"
     url: /about
   - title: "Contact"

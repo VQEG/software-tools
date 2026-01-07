@@ -1,148 +1,20 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Front matter required for Jekyll processing
 ---
 
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+// Import Google Fonts (Open Sans)
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
-/* type scale */
-html {
-  font-size: 15px; // change to whatever
-
-  @include breakpoint($medium) {
-    font-size: 16px; // change to whatever
-  }
-
-  @include breakpoint($large) {
-    font-size: 16px; // change to whatever
-  }
-
-  @include breakpoint($x-large) {
-    font-size: 15px; // change to whatever
-  }
-}
-
-/* dark syntax highlighting (base16) */
-$base00: #ffffff;
-$base01: #e0e0e0;
-$base02: #d0d0d0;
-$base03: #b0b0b0;
-$base04: #000000;
-$base05: #101010;
-$base06: #151515;
-$base07: #202020;
-$base08: #ff0086;
-$base09: #fd8900;
-$base0a: #aba800;
-$base0b: #00c918;
-$base0c: #1faaaa;
-$base0d: #3777e6;
-$base0e: #ad00a1;
-$base0f: #cc6633;
-
-/* custom elements */
-
-.masthead__menu-item {
-  font-size: $type-size-5;
-}
-
-.archive__item-title {
-    font-size: $type-size-5;
-    font-weight: normal;
-}
-
-section.page__content__tool {
-    margin-top: 27px;
-}
-
-footer.page__meta {
-    margin-top: 10px;
-}
-
-p.page__link {
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-size: $type-size-4;
-}
-
-p.page__meta__misc {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-p.page__excerpt {
-    font-size: $type-size-4;
-    margin-bottom: 10px;
-}
-
-.edit {
-  text-align: right;
-  margin-bottom: 10px;
-}
-
-.page__title {
-  margin-top: 30px;
-}
-
-/* Fix button link colors - white text on colored backgrounds */
-.btn--primary,
-.btn--success {
-  color: #fff !important;
-
-  &:visited,
-  &:hover,
-  &:active {
-    color: #fff !important;
-  }
-}
-
-/* Broken link badge for tool listings */
-.broken-link-badge {
-  display: inline-block;
-  background-color: #e67e22;
-  color: #fff;
-  font-size: 0.7em;
-  font-weight: bold;
-  padding: 2px 8px;
-  border-radius: 3px;
-  margin-bottom: 4px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-
-  i {
-    margin-right: 4px;
-  }
-}
-
-/* Broken link filter toggle */
-.broken-link-filter {
-  margin-bottom: 1.5em;
-  padding: 10px 15px;
-  background-color: #f5f5f5;
-  border-radius: 4px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-
-  label {
-    cursor: pointer;
-    font-size: 0.9em;
-    user-select: none;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  input[type="checkbox"] {
-    cursor: pointer;
-    width: 16px;
-    height: 16px;
-  }
-}
-
-/* Hide broken link items when filter is active */
-.hide-broken-links [data-broken-link="true"] {
-  display: none !important;
-}
+// Import VQEG theme partials
+@import "variables";
+@import "base";
+@import "layout";
+@import "header";
+@import "footer";
+@import "buttons";
+@import "archive";
+@import "tool";
+@import "search";
+@import "utilities";

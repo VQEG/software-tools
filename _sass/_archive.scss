@@ -1,0 +1,146 @@
+// Taxonomy index (category/tag navigation)
+.taxonomy__index {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-bottom: $spacing-unit * 2;
+
+  li {
+    margin: 0;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25em;
+      padding: 0.5em 1em;
+      background-color: $light-gray;
+      border-radius: $border-radius;
+      font-size: $font-size-small;
+
+      &:hover {
+        background-color: $vqeg-blue;
+        color: $white;
+
+        .taxonomy__count {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .taxonomy__count {
+    font-size: 0.85em;
+    color: $text-muted;
+  }
+}
+
+// Taxonomy section
+.taxonomy__section {
+  margin-bottom: $spacing-unit * 2;
+}
+
+// Archive subtitle (category/tag heading)
+.archive__subtitle {
+  color: $vqeg-blue;
+  font-size: $font-size-h2;
+  font-weight: $font-weight-bold;
+  padding-bottom: 0.5em;
+  border-bottom: 3px solid $vqeg-red;
+  margin: $spacing-unit * 2 0 $spacing-unit 0;
+  display: inline-block;
+}
+
+// List items container
+.entries-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+// Archive items (tool listings)
+.list__item {
+  border-bottom: 1px solid $border-color;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.archive__item {
+  padding: $spacing-unit 0;
+}
+
+.archive__item-title {
+  font-size: $font-size-large;
+  font-weight: $font-weight-semibold;
+  margin: 0 0 0.25em 0;
+  color: $vqeg-blue;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: $vqeg-red;
+    }
+  }
+}
+
+.archive__item-excerpt {
+  color: $text-muted;
+  font-size: $font-size-base;
+  margin: 0;
+  line-height: 1.5;
+}
+
+// Broken link styling
+.broken-link-badge {
+  display: block;
+  width: fit-content;
+  background-color: #e67e22;
+  color: $white;
+  font-size: 0.7rem;
+  font-weight: $font-weight-bold;
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+
+  i {
+    margin-right: 0.25em;
+  }
+}
+
+// Broken link filter
+.broken-link-filter {
+  margin-bottom: $spacing-unit * 1.5;
+  padding: 10px 15px;
+  background-color: $light-gray;
+  border-radius: $border-radius;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: $font-size-small;
+
+  input[type="checkbox"] {
+    margin: 0;
+  }
+}
+
+// Hide broken links when filter is active
+.hide-broken-links [data-broken-link="true"] {
+  display: none !important;
+}
+
+// Back to top link
+.back-to-top {
+  display: inline-block;
+  margin-top: $spacing-unit;
+  font-size: $font-size-small;
+  color: $text-muted;
+
+  &:hover {
+    color: $vqeg-red;
+  }
+}

@@ -1,0 +1,83 @@
+// Container
+.container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 $spacing-unit;
+}
+
+// Main content area
+.main-content {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: $spacing-unit * 2 $spacing-unit;
+
+  > * {
+    max-width: $content-max-width;
+  }
+}
+
+// Page header (simple, no hero)
+.page-header {
+  background-color: $vqeg-blue;
+  color: $white;
+  padding: $spacing-unit * 2.5 $spacing-unit;
+
+  .container {
+    max-width: $container-max-width;
+  }
+
+  h1 {
+    color: $white;
+    margin: 0;
+    font-size: $font-size-h1;
+    max-width: $content-max-width;
+  }
+
+  .page-excerpt {
+    color: rgba($white, 0.9);
+    margin: 0.75em 0 0 0;
+    font-size: $font-size-large;
+    max-width: $content-max-width;
+  }
+}
+
+// Page content
+.page-content {
+  h2:first-child,
+  h3:first-child {
+    margin-top: 0;
+  }
+}
+
+
+// Home page specific
+.home-page {
+  .page-header {
+    padding: $spacing-unit * 4 $spacing-unit;
+
+    h1, .page-excerpt {
+      max-width: none;
+      text-align: center;
+    }
+
+    .btn {
+      display: block;
+      margin: $spacing-unit auto 0;
+      width: fit-content;
+    }
+  }
+}
+
+// Tool page specific
+.tool-page {
+  .main-content {
+    max-width: $content-max-width;
+  }
+}
+
+// Archive page specific
+.archive-page {
+  .main-content > * {
+    max-width: none;
+  }
+}

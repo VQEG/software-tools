@@ -1,10 +1,8 @@
 ---
+title: Video Databases
+layout: single
 permalink: /video-databases/
-header:
-  overlay_image: /assets/images/test-screen.jpg
 ---
-
-# Video Databases
 
 You may find test videos and/or subjective scores for videos under the following resources:
 

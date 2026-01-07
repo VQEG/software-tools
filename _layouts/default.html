@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.locale | default: 'en' }}">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  {% include header.html %}
+
+  <main id="main" role="main">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  {% if site.search %}
+    {% include search.html %}
+  {% endif %}
+</body>
+</html>

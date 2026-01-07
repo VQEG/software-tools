@@ -1,0 +1,42 @@
+// VQEG Brand Colors
+$vqeg-blue: #003366;
+$vqeg-red: #D63E04;
+$vqeg-dark-blue: #001D3A;
+$vqeg-darker-blue: #001428;
+$white: #ffffff;
+$light-gray: #f5f7fa;
+$gray: #e8edf2;
+$text-color: #333333;
+$text-muted: #666666;
+$border-color: #e0e0e0;
+
+// Typography
+$font-family-base: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// Font Sizes
+$font-size-base: 16px;
+$font-size-small: 0.875rem;
+$font-size-large: 1.125rem;
+$font-size-h1: 2rem;
+$font-size-h2: 1.5rem;
+$font-size-h3: 1.25rem;
+
+// Spacing
+$spacing-unit: 1rem;
+$container-max-width: 1200px;
+$content-max-width: 900px;
+
+// Border Radius
+$border-radius: 4px;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Transitions
+$transition-base: 0.2s ease;

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<article class="home-page">
+  <header class="page-header">
+    <div class="container">
+      <h1>{{ site.title }}</h1>
+      <p class="page-excerpt">{{ site.description }}</p>
+      <a href="{{ '/tools/' | relative_url }}" class="btn btn--primary">Browse Tools</a>
+    </div>
+  </header>
+
+  <div class="main-content">
+    {{ content }}
+  </div>
+</article>

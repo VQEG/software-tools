@@ -19,11 +19,9 @@ function toggleBrokenLinks(hide) {
   } else {
     container.classList.remove('hide-broken-links');
   }
-  // Persist preference
   localStorage.setItem('hideBrokenLinks', hide);
 }
 
-// Restore preference on page load
 document.addEventListener('DOMContentLoaded', function() {
   var hide = localStorage.getItem('hideBrokenLinks') === 'true';
   var checkbox = document.getElementById('hide-broken-links');
@@ -74,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
             {% include archive-single.html type=page.entries_layout %}
           {% endfor %}
         </div>
-        <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+        <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
       </section>
     {% endif %}
   {% endfor %}

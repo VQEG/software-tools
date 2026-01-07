@@ -1,0 +1,66 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: $border-radius;
+  font-weight: $font-weight-semibold;
+  font-size: $font-size-small;
+  text-decoration: none;
+  transition: background-color $transition-base;
+  cursor: pointer;
+  border: none;
+}
+
+.btn--primary {
+  background-color: $vqeg-dark-blue;
+  color: $white !important;
+
+  i, svg, &::before {
+    color: $white !important;
+  }
+
+  &:hover {
+    background-color: $vqeg-darker-blue;
+    color: $white !important;
+  }
+}
+
+.btn--success {
+  background-color: #28a745;
+  color: $white !important;
+
+  &:hover {
+    background-color: #218838;
+    color: $white !important;
+  }
+}
+
+.btn--outline {
+  background-color: transparent;
+  border: 2px solid $vqeg-blue;
+  color: $vqeg-blue !important;
+
+  &:hover {
+    background-color: $vqeg-blue;
+    color: $white !important;
+  }
+}
+
+// Button with icon - ensure icons inherit button text color
+.btn i,
+.btn svg {
+  width: 1em;
+  height: 1em;
+  color: inherit;
+  fill: currentColor;
+}
+
+// Ensure icon color in primary/success buttons
+.btn--primary i,
+.btn--primary svg,
+.btn--success i,
+.btn--success svg {
+  color: $white;
+  fill: $white;
+}

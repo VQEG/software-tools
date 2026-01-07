@@ -1,0 +1,42 @@
+<header class="site-header">
+  <div class="header-container">
+    <div class="site-branding">
+      <a href="{{ '/' | relative_url }}" class="site-logo">
+        <img src="{{ '/assets/images/vqeg-logo.svg' | relative_url }}" alt="{{ site.title }}">
+      </a>
+      <span class="site-subtitle">Subjective Tools and Labs Setup</span>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleNav()">
+      <span class="hamburger"></span>
+    </button>
+
+    <nav class="site-nav" id="site-navigation">
+      <ul>
+        {% for link in site.data.navigation.main %}
+          <li>
+            <a href="{{ link.url | relative_url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>
+              {{ link.title }}
+            </a>
+          </li>
+        {% endfor %}
+        {% if site.search %}
+          <li>
+            <button type="button" class="search-toggle" aria-label="Search" onclick="openSearch()">
+              <i class="fas fa-search"></i>
+            </button>
+          </li>
+        {% endif %}
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<script>
+function toggleNav() {
+  var nav = document.getElementById('site-navigation');
+  var toggle = document.querySelector('.nav-toggle');
+  var isOpen = nav.classList.toggle('is-open');
+  toggle.setAttribute('aria-expanded', isOpen);
+}
+</script>

@@ -1,0 +1,152 @@
+.site-header {
+  background-color: $white;
+  border-bottom: 1px solid $border-color;
+  padding: $spacing-unit 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 $spacing-unit;
+}
+
+.site-branding {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.site-logo {
+  display: block;
+
+  img {
+    height: 45px;
+    width: auto;
+  }
+}
+
+.site-subtitle {
+  display: block;
+  font-size: 1rem;
+  color: $text-muted;
+  font-weight: $font-weight-bold;
+  margin-top: 0.25rem;
+  letter-spacing: 0.02em;
+}
+
+.site-nav {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  li {
+    margin: 0;
+  }
+
+  a {
+    display: block;
+    color: $vqeg-blue;
+    font-weight: $font-weight-semibold;
+    padding: 0.5em 0.75em;
+    border-radius: $border-radius;
+    transition: all $transition-base;
+
+    &:hover {
+      color: $vqeg-red;
+      background-color: $light-gray;
+    }
+
+    &[aria-current="page"] {
+      color: $vqeg-red;
+    }
+  }
+}
+
+// Search toggle button
+.search-toggle {
+  background: none;
+  border: none;
+  color: $vqeg-blue;
+  font-size: 1.1rem;
+  padding: 0.5em 0.75em;
+  cursor: pointer;
+  border-radius: $border-radius;
+  transition: all $transition-base;
+
+  &:hover {
+    color: $vqeg-red;
+    background-color: $light-gray;
+  }
+}
+
+// Mobile menu toggle
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  padding: 0.5em;
+  cursor: pointer;
+
+  .hamburger {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: $vqeg-blue;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      background-color: $vqeg-blue;
+      left: 0;
+    }
+
+    &::before { top: -7px; }
+    &::after { top: 7px; }
+  }
+}
+
+// Mobile styles
+@media (max-width: $breakpoint-md) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: $white;
+    border-bottom: 1px solid $border-color;
+    padding: $spacing-unit;
+
+    &.is-open {
+      display: block;
+    }
+
+    ul {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    a {
+      padding: 0.75em 1em;
+    }
+  }
+}

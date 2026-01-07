@@ -1,0 +1,131 @@
+// Search overlay
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($vqeg-dark-blue, 0.95);
+  z-index: 1000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 15vh;
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.search-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 $spacing-unit;
+}
+
+// Close button
+.search-close {
+  position: absolute;
+  top: $spacing-unit;
+  right: $spacing-unit;
+  background: none;
+  border: none;
+  color: $white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5em;
+  opacity: 0.8;
+  transition: opacity $transition-base;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+// Search form
+.search-form {
+  margin-bottom: $spacing-unit * 1.5;
+}
+
+.search-input {
+  width: 100%;
+  padding: 1em 1.25em;
+  border: none;
+  border-radius: $border-radius;
+  font-size: $font-size-large;
+  font-family: $font-family-base;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba($vqeg-red, 0.5);
+  }
+
+  &::placeholder {
+    color: $text-muted;
+  }
+}
+
+// Search results
+.search-results {
+  max-height: 60vh;
+  overflow-y: auto;
+  color: $white;
+
+  p {
+    color: rgba($white, 0.8);
+    font-size: $font-size-small;
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.search-result {
+  background-color: rgba($white, 0.1);
+  padding: $spacing-unit;
+  border-radius: $border-radius;
+  margin-bottom: 0.75em;
+  transition: background-color $transition-base;
+
+  &:hover {
+    background-color: rgba($white, 0.15);
+  }
+
+  h3 {
+    margin: 0 0 0.25em 0;
+    font-size: $font-size-base;
+    font-weight: $font-weight-semibold;
+
+    a {
+      color: $white;
+
+      &:hover {
+        color: $vqeg-red;
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: $font-size-small;
+    color: rgba($white, 0.7);
+  }
+}
+
+// Inline search (for page)
+.page-search {
+  margin-bottom: $spacing-unit * 2;
+
+  input[type="search"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75em 1em;
+    border: 2px solid $border-color;
+    border-radius: $border-radius;
+    font-size: $font-size-base;
+    font-family: $font-family-base;
+
+    &:focus {
+      outline: none;
+      border-color: $vqeg-blue;
+    }
+  }
+}

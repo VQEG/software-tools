@@ -1,0 +1,14 @@
+<div class="search-overlay" id="search-overlay" hidden>
+  <div class="search-container">
+    <button class="search-close" aria-label="Close search" onclick="closeSearch()">
+      <i class="fas fa-times"></i>
+    </button>
+    <form class="search-form" role="search" onsubmit="return false;">
+      <input type="search" id="search-input" class="search-input" placeholder="Search tools..." autocomplete="off">
+    </form>
+    <div id="search-results" class="search-results"></div>
+  </div>
+</div>
+
+<script src="{{ '/assets/js/lunr.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/search.js' | relative_url }}"></script>
